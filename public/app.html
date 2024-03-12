@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Current URL information</h1>
+    <p>protocol:<span id="protocol"></span></p>
+    <p>host:<span id="host"></span></p>
+    <p>pathname:<span id="pathname"></span></p>
+    <p>origin:<span id="origin"></span></p>
+    <p>port:<span id="port"></span></p>
+</body>
+<script>
+    document.getElementById("protocol").innerText=window.location.protocol
+    document.getElementById("host").innerText=window.location.host
+    document.getElementById("pathname").innerText=window.location.pathname
+    document.getElementById("origin").innerText=window.location.origin
+    document.getElementById("port").innerText=window.location.port
+
+</script>
+</html>
